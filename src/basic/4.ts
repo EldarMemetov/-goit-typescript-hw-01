@@ -11,3 +11,9 @@ console.log(calc(5, 5));
 function customError(): never {
   throw new Error("Error");
 }
+
+try {
+  customError();
+} catch (error) {
+  console.error(error);
+}
